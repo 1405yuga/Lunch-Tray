@@ -26,5 +26,13 @@
     {
         "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.0\\com.example.lunchtray.app-mergeDebugResources-47:\\layout\\activity_main.xml",
         "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.0\\com.example.lunchtray.app-main-50:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.example.lunchtray.app-mergeDebugResources-47:/layout/fragment_accompaniment_menu.xml",
+        "source": "com.example.lunchtray.app-main-50:/layout/fragment_accompaniment_menu.xml"
+    },
+    {
+        "merged": "com.example.lunchtray.app-mergeDebugResources-47:/layout/fragment_side_menu.xml",
+        "source": "com.example.lunchtray.app-main-50:/layout/fragment_side_menu.xml"
     }
 ]
