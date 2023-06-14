@@ -96,6 +96,11 @@ class OrderViewModel : ViewModel() {
         // TODO: set the current side value to the menu item corresponding to the passed in string
         // TODO: update the subtotal to reflect the price of the selected side.
 
+        previousSidePrice= _side.value?.price ?: 0.0
+        _subtotal.value= _subtotal.value?.minus(previousSidePrice)
+        _side.value=menuItems[side]
+        updateSubtotal(_side.value?.price ?: 0.0 )
+
     }
 
     /**
@@ -112,6 +117,11 @@ class OrderViewModel : ViewModel() {
         // TODO: set the current accompaniment value to the menu item corresponding to the passed in
         //  string
         // TODO: update the subtotal to reflect the price of the selected accompaniment.
+
+        previousAccompanimentPrice= _accompaniment.value?.price ?: 0.0
+        _subtotal.value= _subtotal.value?.minus(previousAccompanimentPrice)
+        _accompaniment.value=menuItems[accompaniment]
+        updateSubtotal(_accompaniment.value?.price ?: 0.0 )
     }
 
     /**
