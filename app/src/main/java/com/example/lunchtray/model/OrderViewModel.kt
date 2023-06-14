@@ -131,8 +131,10 @@ class OrderViewModel : ViewModel() {
         // TODO: if _subtotal.value is not null, update it to reflect the price of the recently
         //  added item.
         //  Otherwise, set _subtotal.value to equal the price of the item.
+        _subtotal.value=itemPrice
 
         // TODO: calculate the tax and resulting total
+        calculateTaxAndTotal()
     }
 
     /**
