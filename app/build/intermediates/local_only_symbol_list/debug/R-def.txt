@@ -13,9 +13,18 @@ dimen side_margin
 drawable ic_dashboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+id accompanimentMenuFragment
 id accompaniment_options
 id accompaniment_price
 id accompaniment_selection
+id action_accompanimentMenuFragment_to_checkoutFragment
+id action_accompanimentMenuFragment_to_startOrderFragment
+id action_checkoutFragment_to_startOrderFragment
+id action_entreeMenuFragment_to_sideMenuFragment
+id action_entreeMenuFragment_to_startOrderFragment
+id action_sideMenuFragment_to_accompanimentMenuFragment
+id action_sideMenuFragment_to_startOrderFragment
+id action_startOrderFragment_to_entreeMenuFragment
 id berries
 id berries_description
 id berries_price
@@ -26,11 +35,13 @@ id cancel_button
 id cauliflower
 id cauliflower_description
 id cauliflower_price
+id checkoutFragment
 id chili
 id chili_description
 id chili_price
 id container
 id divider
+id entreeMenuFragment
 id entree_options
 id entree_price
 id entree_selection
@@ -39,6 +50,7 @@ id layout_checkout
 id layout_side_menu
 id layout_start_order
 id mobile_navigation
+id navHost
 id next_button
 id order_summary
 id pasta
@@ -56,6 +68,7 @@ id rice_price
 id salad
 id salad_description
 id salad_price
+id sideMenuFragment
 id side_options
 id side_price
 id side_selection
@@ -65,6 +78,7 @@ id skillet_price
 id soup
 id soup_description
 id soup_price
+id startOrderFragment
 id start_order_btn
 id submit_button
 id subtotal
