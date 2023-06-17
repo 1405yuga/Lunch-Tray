@@ -140,7 +140,7 @@
                 tools:text="Total: $10.73"
                 android:text="@{viewmodel.total}"/>
 
-            <!-- TODO: submit the order when clicked -->
+            <!--  submit the order when clicked -->
             <Button
                 android:id="@+id/submit_button"
                 android:layout_width="match_parent"
@@ -149,9 +149,10 @@
                 android:text="@string/submit"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/total"/>
+                app:layout_constraintTop_toBottomOf="@id/total"
+                android:onClick="@{()-> checkOutFragment.submitOrder()}"/>
 
-            <!-- TODO: cancel the order when clicked -->
+            <!--  cancel the order when clicked -->
             <Button
                 android:id="@+id/cancel_button"
                 style="?attr/materialButtonOutlinedStyle"
@@ -161,7 +162,8 @@
                 android:text="@string/cancel"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/submit_button"/>
+                app:layout_constraintTop_toBottomOf="@id/submit_button"
+                android:onClick="@{()-> checkOutFragment.cancelOrder()}"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
