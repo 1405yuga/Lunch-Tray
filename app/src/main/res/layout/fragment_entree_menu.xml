@@ -59,8 +59,9 @@
                     android:textAppearance="?attr/textAppearanceBody1"
                     android:text='@{viewModel.menuItems["cauliflower"].name}'
                     tools:text="Entree 1"
+                    android:onClick='@{()-> viewModel.setEntree("cauliflower") }'
                     android:checked='@{viewModel.menuItems["cauliflower"].equals(viewModel.entree)}'
-                    android:onClick='@{()-> viewModel.setEntree("cauliflower") }'/>
+                    />
 
                 <TextView
                     android:id="@+id/cauliflower_description"

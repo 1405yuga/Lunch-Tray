@@ -65,6 +65,7 @@ class CheckoutFragment : Fragment() {
             lifecycleOwner = viewLifecycleOwner
             //  initialize the OrderViewModel and CheckoutFragment variables
             viewmodel=sharedViewModel
+            checkOutFragment = this@CheckoutFragment
         }
     }
 

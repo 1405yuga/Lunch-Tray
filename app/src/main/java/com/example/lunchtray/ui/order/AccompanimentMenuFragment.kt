@@ -63,7 +63,7 @@ class AccompanimentMenuFragment : Fragment() {
             lifecycleOwner = viewLifecycleOwner
             viewModel = sharedViewModel
             // initialize the AccompanimentMenuFragment variables
-            sharedViewModel.setAccompaniment(menuItems["bread"]?.name ?: "none")
+            fragmentAccompaniment = this@AccompanimentMenuFragment
         }
     }
 

@@ -16,6 +16,7 @@
 package com.example.lunchtray.ui.order
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -26,6 +27,7 @@ import com.example.lunchtray.R
 import com.example.lunchtray.data.DataSource
 import com.example.lunchtray.databinding.FragmentEntreeMenuBinding
 import com.example.lunchtray.model.OrderViewModel
+import com.google.android.material.tabs.TabLayout.TabGravity
 
 /**
  * [EntreeMenuFragment] allows people to add an entree to the order or cancel the order.
@@ -42,6 +44,7 @@ class EntreeMenuFragment : Fragment() {
     // Use the 'by activityViewModels()' Kotlin property delegate from the fragment-ktx artifact
     private val sharedViewModel: OrderViewModel by activityViewModels()
     val menuItems = DataSource.menuItems
+    val TAG= "EntreeMenuFragment"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -62,7 +65,7 @@ class EntreeMenuFragment : Fragment() {
             lifecycleOwner = viewLifecycleOwner
             viewModel = sharedViewModel
             //  initialize the EntreeMenuFragment variables
-            sharedViewModel.setEntree(menuItems["cauliflower"]?.name ?: "none")
+            fragmentEntreeMenu = this@EntreeMenuFragment
         }
     }
 
@@ -71,6 +74,7 @@ class EntreeMenuFragment : Fragment() {
      */
     fun goToNextScreen() {
         //  Navigate to the SideMenuFragment
+        Log.d(TAG,"go to next screen called")
         findNavController().navigate(R.id.action_entreeMenuFragment_to_sideMenuFragment)
     }
 

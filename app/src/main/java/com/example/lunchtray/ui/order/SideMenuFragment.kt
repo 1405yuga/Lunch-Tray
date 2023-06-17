@@ -62,7 +62,7 @@ class SideMenuFragment : Fragment() {
             lifecycleOwner = viewLifecycleOwner
             viewModel = sharedViewModel
             //  initialize the SideMenuFragment variables
-            sharedViewModel.setSide(menuItems["salad"]?.name ?: "none")
+            fragmentSideMenu= this@SideMenuFragment
         }
     }
 
